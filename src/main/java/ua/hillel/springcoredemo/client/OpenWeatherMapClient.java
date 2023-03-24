@@ -3,6 +3,7 @@ package ua.hillel.springcoredemo.client;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
+import lombok.Setter;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 import ua.hillel.springcoredemo.model.Weather;
@@ -16,6 +17,7 @@ import java.net.http.HttpResponse;
 
 @Component
 @RequiredArgsConstructor
+@Setter
 public class OpenWeatherMapClient  implements WeatherClient {
     private final HttpClient httpClient;
     private final ObjectMapper objectMapper;
