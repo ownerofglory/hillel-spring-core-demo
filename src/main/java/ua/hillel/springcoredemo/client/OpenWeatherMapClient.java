@@ -1,10 +1,10 @@
 package ua.hillel.springcoredemo.client;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 import ua.hillel.springcoredemo.model.Weather;
 
@@ -14,6 +14,7 @@ import java.net.URISyntaxException;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
+import java.util.List;
 
 @Component
 @RequiredArgsConstructor
@@ -27,6 +28,9 @@ public class OpenWeatherMapClient  implements WeatherClient {
 
     @Value("${weather.client.apiToken}")
     private String apiToken;
+
+    @Value("#{'${weather.client.list}'.split(\",\")}")
+    private String[] list;
 
     @Override
     public Weather getCurrentWeather(String q) {

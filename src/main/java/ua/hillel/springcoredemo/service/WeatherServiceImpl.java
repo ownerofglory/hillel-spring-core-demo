@@ -1,12 +1,11 @@
 package ua.hillel.springcoredemo.service;
 
 import lombok.AllArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 import ua.hillel.springcoredemo.client.WeatherClient;
 import ua.hillel.springcoredemo.model.Weather;
 
-@Component
+@Service
 @AllArgsConstructor
 public class WeatherServiceImpl implements WeatherService {
     private WeatherClient client;
