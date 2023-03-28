@@ -1,4 +1,4 @@
-package ua.hillel.springcoredemo.client.util;
+package ua.hillel.springcoredemo.util;
 
 import java.io.BufferedReader;
 import java.io.InputStream;

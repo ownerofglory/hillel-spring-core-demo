@@ -1,4 +1,4 @@
-package ua.hillel.springcoredemo.client.client;
+package ua.hillel.springcoredemo.client;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.BeforeEach;
@@ -7,7 +7,7 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import ua.hillel.springcoredemo.client.OpenWeatherMapClient;
 import ua.hillel.springcoredemo.client.WeatherClient;
-import ua.hillel.springcoredemo.client.util.TestUtil;
+import ua.hillel.springcoredemo.util.TestUtil;
 import ua.hillel.springcoredemo.model.Weather;
 
 import java.io.IOException;

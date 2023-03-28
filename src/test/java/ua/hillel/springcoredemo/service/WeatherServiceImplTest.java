@@ -1,17 +1,14 @@
-package ua.hillel.springcoredemo.client.service;
+package ua.hillel.springcoredemo.service;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import ua.hillel.springcoredemo.client.WeatherClient;
-import ua.hillel.springcoredemo.client.util.TestUtil;
+import ua.hillel.springcoredemo.util.TestUtil;
 import ua.hillel.springcoredemo.model.Weather;
-import ua.hillel.springcoredemo.service.WeatherService;
-import ua.hillel.springcoredemo.service.WeatherServiceImpl;
 
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.mockito.ArgumentMatchers.anyString;
